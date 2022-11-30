@@ -6,5 +6,6 @@ public class BasicCharMath1 {
 		System.out.println(c);
 		System.out.println((char) (c + 1));
 		System.out.println((char) (c / 5));
+
 	}
 }
