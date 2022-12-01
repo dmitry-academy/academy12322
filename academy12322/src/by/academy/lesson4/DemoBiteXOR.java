@@ -10,7 +10,7 @@ public class DemoBiteXOR {
 			result ^= array[i];
 			System.out.println(result);
 		}
-		System.out.println("-------------");
+//		System.out.println("-------------");
 		System.out.println(result);
 
 	}
