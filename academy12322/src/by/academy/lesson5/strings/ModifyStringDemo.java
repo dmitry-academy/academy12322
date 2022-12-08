@@ -12,7 +12,7 @@ public class ModifyStringDemo {
 
 		System.out.println("Hello".toLowerCase());
 		System.out.println("Hello".toUpperCase());
-		
+		System.out.println("----------");
 		System.out.println("    Hello World ");
 		System.out.println("			Hello World ".trim());
 		System.out.println("			Hello World ".stripLeading());
@@ -20,7 +20,7 @@ public class ModifyStringDemo {
 		System.out.println("			Hello World ".strip());
 
 		String s = "Hellollo";
-		String s1 = s.replace("ll", "");
+		String s1 = s.replace("l", "");
 		System.out.println("s: " + s);
 		System.out.println("s1: " + s1);
 

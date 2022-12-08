@@ -4,6 +4,11 @@ public class Cat {
 
 	public String name;
 
+	public Cat(String name) {
+		super();
+		this.name = name;
+	}
+
 	public void jump() {
 		System.out.println("Jump, cat, jump!");
 	}

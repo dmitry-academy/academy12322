@@ -1,6 +1,7 @@
 Задание 1.
 
-a) Напишите метод, который принимает в качестве параметра любую строку, например “I like Java!!!”. 
+a) Напишите метод, который принимает в качестве параметра любую строку,
+ например “I like Java!!!”. 
 б) Распечатать последний символ строки. Используем метод String.charAt().
 в) Проверить, заканчивается ли ваша строка подстрокой “!!!”. Используем метод String.endsWith().
 г) Проверить, начинается ли ваша строка подстрокой “I like”. Используем метод String.startsWith(). 
@@ -25,15 +26,19 @@ e) Найти позицию подстроки “Java” в строке “I 
 
 Задание 3.
 
-Напишите метод, заменяющий в строке каждое второе вхождение «object-oriented programming» (не учитываем регистр символов) на «OOP». Например строка
+Напишите метод, заменяющий в строке каждое второе вхождение 
+«object-oriented programming» (не учитываем регистр символов) на «OOP». 
+Например строка:
 "Object-oriented programming is a programming language model organized around objects rather than "actions" and data rather than logic. Object-oriented programming blabla. Object-oriented programming bla."
 должна быть преобразована в 
-"Object-oriented programming is a programming language model organized around objects rather than "actions" and data rather than logic. OOP blabla. Object-oriented programming bla."
+"Object-oriented programming is a programming language model organized around objects rather than "actions" and data rather than logic. OOP blabla. Object-oriented programming 
+bla."
 
 Задание 4.
 
 Даны строки разной длины (длина - четное число), 
-необходимо вернуть ее два средних знака: "string" → "ri", "code" → "od", "Practice"→"ct".
+необходимо вернуть ее два средних знака: 
+"string" → "ri", "code" → "od", "Practice"→"ct".
 
 Задание 5. 
 

@@ -5,5 +5,6 @@ public class SubstringDemo {
 		String s = "Welcome to Minsk!!!".substring(11);
 		System.out.println("Welcome to Minsk!!!".substring(11));
 		System.out.println("Welcome to Minsk!!!".substring(10, 16));
+
 	}
 }
