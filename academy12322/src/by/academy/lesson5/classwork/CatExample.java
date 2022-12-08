@@ -3,7 +3,7 @@ package by.academy.lesson5.classwork;
 public class CatExample {
 
 	public static void main(String... args) {
-		Cat c = new Cat();
+		Cat c = new Cat("");
 		c.setName("Test");
 
 		Cat c2 = c;
