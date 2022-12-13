@@ -7,6 +7,6 @@ public class Task5 {
 //		оставить лишь 1 пробел между слов.
 	public static void main(String... strings) {
 		String str = " Hey      There!     How      Are you doing?           ";
-		System.out.println(str.replaceAll("\\s+", " ").trim());
+		System.out.println(str.trim().replaceAll("\\s+", " "));
 	}
 }

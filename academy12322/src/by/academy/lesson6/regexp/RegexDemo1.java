@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class RegexDemo1 {
 //	private static final String stringPattern = "c[a|o|u](de)+[S]*";
 //	private static finalString stringPattern = "(de){1,2}";
-	private static final String stringPattern = "de";
+	private static final String stringPattern = "[de]+";
 	private static final Pattern pattern = Pattern.compile(stringPattern);
 
 	public static void main(String[] args) {

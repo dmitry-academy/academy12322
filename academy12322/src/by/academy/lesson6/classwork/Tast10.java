@@ -16,10 +16,11 @@ public class Tast10 {
 		Matcher m = pattern.matcher(text);
 
 		while (m.find()) {
-			int start = m.start();
-			int end = m.end();
-
-			System.out.println(text.substring(start, end));
+//			int start = m.start();
+//			int end = m.end();
+//
+//			System.out.println(text.substring(start, end));
+			System.out.println(m.group());
 		}
 		System.out.println(text.replaceAll("\\s+", " "));
 		

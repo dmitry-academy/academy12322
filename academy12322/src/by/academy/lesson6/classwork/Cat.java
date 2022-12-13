@@ -1,5 +1,7 @@
 package by.academy.lesson6.classwork;
 
+import java.util.Objects;
+
 public class Cat {
 
 	private String nickname;

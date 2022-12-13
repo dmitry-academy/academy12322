@@ -13,9 +13,9 @@ public class WrapperDemo4 {
 //		System.out.println(str);
 
 //		toHexString(), toOctalString(), toBinaryString() 
-//		System.out.println(Integer.toHexString(i));
-//		System.out.println(Integer.toOctalString(i));
-//		System.out.println(Integer.toBinaryString(i));
+		System.out.println(Integer.toHexString(i));
+		System.out.println(Integer.toOctalString(i));
+		System.out.println(Integer.toBinaryString(i));
 
 //		double d1 = 123.0;
 		int i1;
@@ -23,15 +23,25 @@ public class WrapperDemo4 {
 //		i = i1;
 //		System.out.println(i);
 
-		Double d1 = null;
-		Double d2 = 0.0;
+//		Double d1 = null;
+//		Double d2 = 0.0;
+//
+//		double d11 = d1;
+//		
+//		double d22 = 0.0;
+//		int d33 = 100 / 0;
+//		
+//		System.out.println(d11);
+//		
+//		
 
-		double d11 = d1;
-		
-		double d22 = 0.0;
-		int d33 = 100 / 0;
-		
-		System.out.println(d11);
+		int m = 5;
+		System.out.println(test(null));
+	}
+
+	public static int test(Integer i) {
+		System.out.println(i);
+		return i;
 	}
 
 }

@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class RegexDemo2 {
 
-	static Pattern pattern = Pattern.compile("a*b");
+	static Pattern pattern = Pattern.compile("ca*b");
 
 	public static void main(String[] args) {
 
@@ -13,6 +13,8 @@ public class RegexDemo2 {
 
 		Matcher matcher = pattern.matcher(text);
 		boolean b = matcher.matches();
+		
+		
 
 //		while (matcher.find()) {
 //			System.out.println(text.substring(matcher.start(), matcher.end()));

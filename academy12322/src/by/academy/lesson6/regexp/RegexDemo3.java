@@ -4,6 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexDemo3 {
+	static Pattern pattern = Pattern.compile(".+\\.(com|ua|org)");
+
 	public static void main(String[] args) {
 		System.out.println(test("google.com"));
 		System.out.println(test("google.ru"));
@@ -15,7 +17,6 @@ public class RegexDemo3 {
 	}
 
 	public static boolean test(String testString) {
-		Pattern pattern = Pattern.compile(".+\\.(com|ua|org)");
 		Matcher matcher = pattern.matcher(testString);
 		return matcher.matches();
 	}
