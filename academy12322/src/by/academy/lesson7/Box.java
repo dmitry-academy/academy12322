@@ -11,6 +11,7 @@ public class Box implements Cloneable {
 		this.width = 10;
 		this.height = 10;
 		this.depth = 10;
+		System.out.println("Box");
 	}
 
 	Box(String str) {

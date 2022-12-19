@@ -10,9 +10,9 @@ public class Animal extends Creature implements Walkable {
 		System.out.println("lalala!");
 	}
 
-	public void say() {
-		System.out.println("...");
-	}
+//	public void say() {
+//		System.out.println("...");
+//	}
 
 	protected void test() {
 

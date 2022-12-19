@@ -40,6 +40,7 @@ public class ApplicationDemo {
 		for (Animal a : animals) {
 			a.say();
 		}
-
+		Animal cat2 = new Cat();
+		((Cat) cat2).oops();
 	}
 }

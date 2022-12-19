@@ -5,18 +5,22 @@ public class HeavyBox extends Box implements Comparable<HeavyBox> {
 
 	public HeavyBox() {
 		super();
+		System.out.println("HeavyBox");
 	}
 
-	public HeavyBox(int width, int height, int depth, int weight) {
+	public HeavyBox(int width, int height) {
 		this.width = width;
 		this.height = height;
 		this.depth = depth;
 		this.weight = weight;
 	}
 
-	@Override
-	public void print() {
-		System.out.println("HeavyBox print");
+	
+	public HeavyBox(int width, int height, int depth, int weight) {
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
+		this.weight = weight;
 	}
 
 	public void printSomething() {

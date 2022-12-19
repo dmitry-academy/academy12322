@@ -10,10 +10,8 @@ public class F extends E {
 	public F(int i) {
 		super();
 		this.i = i;
+		
 		System.out.println("В конструкторе F");
 	}
 
-	
-
-	
 }

@@ -5,6 +5,7 @@ public class DifferentBoxDemo1 {
 		Box box = new Box(15, 10, 25);
 		HeavyBox heavyBox = new HeavyBox(15, 10, 20, 5);
 		heavyBox.getVolume();
+		heavyBox.print();
 		
 		ColorBox colorBox = new ColorBox(25, 12, 20, "красный");
 

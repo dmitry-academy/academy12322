@@ -3,8 +3,6 @@ package by.academy.lesson7;
 public class ColorBox extends Box {
 	String color;
 
-	double width;
-
 	public ColorBox() {
 		super();
 	}
