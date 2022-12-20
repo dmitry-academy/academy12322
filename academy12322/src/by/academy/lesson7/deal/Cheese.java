@@ -2,6 +2,7 @@ package by.academy.lesson7.deal;
 
 public class Cheese extends Product {
 
+	private static final long serialVersionUID = 1L;
 	private int age;
 
 	public Cheese() {
@@ -16,7 +17,7 @@ public class Cheese extends Product {
 	@Override
 	protected double getDiscount() {
 		if (age >= 20) {
-			return 0.8;
+			return 0.8; // 20%
 		}
 		return 1;
 	}
