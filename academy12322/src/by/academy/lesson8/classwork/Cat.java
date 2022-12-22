@@ -1,6 +1,6 @@
 package by.academy.lesson8.classwork;
 
-public class Cat {
+public class Cat implements Eatable, Walkable, Sleepable {
 
 	private String nickname;
 	private int age;
@@ -46,6 +46,21 @@ public class Cat {
 		builder.append(money);
 		builder.append("]");
 		return builder.toString();
+	}
+
+	@Override
+	public void sleep() {
+		System.out.println("sleep cat");
+	}
+
+	@Override
+	public void walk() {
+		System.out.println("walk cat");
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("eat cat");
 	}
 
 }
