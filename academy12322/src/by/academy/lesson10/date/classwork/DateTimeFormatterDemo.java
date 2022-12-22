@@ -15,7 +15,7 @@ public class DateTimeFormatterDemo {
 
 		DateTimeFormatter formatterDT = DateTimeFormatter.ofPattern("dd-MM-yyyy", Locale.US);
 
-		LocalDate ld = LocalDate.parse("01-01-20201", formatterDT);
+		LocalDate ld = LocalDate.parse("01-01-2020", formatterDT);
 		System.out.println(ld);
 
 		DateTimeFormatter custom = DateTimeFormatter.ofPattern("dd-yyyy", Locale.US);
@@ -23,7 +23,10 @@ public class DateTimeFormatterDemo {
 		LocalDateTime ldt1 = LocalDateTime.now();
 		System.out.println(ldt1);
 		System.out.println(custom.format(ldt1));
-		
+
+		DateTimeFormatter newFormat = DateTimeFormatter.ofPattern("yyyy, MMMM d", Locale.US);
+		System.out.println(ld.format(newFormat));
+
 	}
 
 }
