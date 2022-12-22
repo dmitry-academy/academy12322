@@ -10,7 +10,7 @@ public class LocalDateDemo2 {
 //		LocalDate today = LocalDate.now();
 		LocalDate today = LocalDate.of(2022, 2, 1);
 
-		System.out.println(Month.FEBRUARY);
+//		System.out.println(Month.FEBRUARY);
 		int year = today.getYear();
 		int month = today.getMonthValue();
 		Month monthAsEnum = today.getMonth(); // как перечисление

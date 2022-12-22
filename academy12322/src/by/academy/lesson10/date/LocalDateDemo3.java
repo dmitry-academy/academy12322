@@ -15,6 +15,7 @@ public class LocalDateDemo3 {
 
 		LocalDate dte = today.withYear(2000);
 		System.out.println(dte.isLeapYear());
+		System.out.println(dte);
 		System.out.println("Год: " + year);
 		System.out.println("Месяц: " + month);
 		System.out.println("День в году: " + dayYear);

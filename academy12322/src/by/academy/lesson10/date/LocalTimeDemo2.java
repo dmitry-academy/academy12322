@@ -4,6 +4,7 @@ import java.time.LocalTime;
 
 public class LocalTimeDemo2 {
 	public static void main(String[] args) throws InterruptedException {
+
 		LocalTime now = LocalTime.now();
 		int hour = now.getHour();
 		int minute = now.getMinute();
