@@ -1,4 +1,4 @@
-package by.academy.lesson10.enums;
+package by.academy.lesson12.enums;
 
 public enum CoffeeSize3 {
 
@@ -17,10 +17,4 @@ public enum CoffeeSize3 {
 	public int getMl() {
 		return ml;
 	}
-
-	@Override
-	public String toString() {
-		return "CoffeeSize3:[ml = " + ml + "]";
-	}
-
 }

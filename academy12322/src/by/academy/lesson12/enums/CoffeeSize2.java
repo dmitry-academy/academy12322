@@ -1,4 +1,4 @@
-package by.academy.lesson10.enums;
+package by.academy.lesson12.enums;
 
 import by.academy.lesson10.classwork.Flyable;
 
@@ -10,6 +10,7 @@ public enum CoffeeSize2 implements Flyable {
 			System.out.println("Big coffee");
 		}
 	},
+
 	HUGE(150, "H") {
 		@Override
 		public void test() {
