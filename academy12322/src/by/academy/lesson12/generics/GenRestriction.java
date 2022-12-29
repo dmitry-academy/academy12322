@@ -8,7 +8,7 @@ public class GenRestriction<T> {
 	public GenRestriction(T ob, T[] array) {
 		// Недопустимо!!!
 //		оb = (T) new Object();
-//		array = (T[]) new Object[10];
+		array = (T[]) new Object[10];
 		this.ob = ob;
 		this.array = array;
 	}

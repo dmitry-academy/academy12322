@@ -1,6 +1,8 @@
 package by.academy.lesson7.deal;
 
-public class Cheese extends Product {
+import java.io.Serializable;
+
+public class Cheese extends Product implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private int age;

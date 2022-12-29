@@ -1,8 +1,11 @@
 package by.academy.lesson12.generics;
 
-public class GenericSub<T> extends GenericSuper<T> {
+import by.academy.lesson7.deal.Cheese;
+import by.academy.lesson7.deal.Product;
+
+public class GenericSub<T, V, K> extends GenericSuper<Product> {
 
 	public GenericSub(T ob) {
-		super(ob);
+		super(new Cheese());
 	}
 }
