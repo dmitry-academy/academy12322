@@ -2,7 +2,6 @@ package by.academy.lesson13.annotations;
 
 public class AnnotationMain {
 
-//	@SuppressWarnings("deprecation")
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 //		System.out.println(AnnotationMain.class);

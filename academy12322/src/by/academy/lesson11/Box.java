@@ -6,6 +6,12 @@ public class Box<T> {
 
 	private T[] items;
 
+	@SuppressWarnings("unchecked")
+	public Box() {
+		super();
+		this.items = (T[]) new Object[10];
+	}
+
 	public T[] getItems() {
 		return items;
 	}
