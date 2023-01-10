@@ -20,6 +20,7 @@ public class CustomIterator<T> implements Iterator<T> {
 		if (array == null || array.length <= index) {
 			return false;
 		}
+		
 		return array[index] != null;
 	}
 

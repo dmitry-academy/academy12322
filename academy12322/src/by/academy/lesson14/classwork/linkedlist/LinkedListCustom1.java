@@ -1,8 +1,6 @@
 package by.academy.lesson14.classwork.linkedlist;
 
-import by.academy.lesson14.classwork.linkedlist.LinkedListCustom1.Node;
-
-public class LinkedListCustom<T> {
+public class LinkedListCustom1<T> {
 
 	private Node head;
 	private Node tail;
@@ -21,40 +19,6 @@ public class LinkedListCustom<T> {
 		size++;
 	}
 
-	public void print() {
-		Node currentNode = head;
-		while (currentNode != null) {
-			System.out.println(currentNode.value);
-			currentNode = currentNode.next;
-		}
-	}
-
-	public T get(int index) {
-		if (index >= size || index < 0) {
-			// error
-			return null;
-		}
-		int counter = 0;
-		Node currentNode = head;
-		while (counter < index) {
-			currentNode = currentNode.next;
-			counter++;
-		}
-		return currentNode.value;
-	}
-	private Node getNode(int index) {
-		if (index < 0 || index > size - 1) {
-			System.err.println("Index of bound exception");
-			return null;
-		}
-		int counter = 0;
-		Node currentNode = head;
-		while (counter < index) {
-			currentNode = currentNode.next;
-			counter++;
-		}
-		return currentNode;
-	}
 	public void add(int index, T value) {
 		if (index < 0 || index > size - 1) {
 			System.err.println("Index of bound exception");
@@ -88,6 +52,25 @@ public class LinkedListCustom<T> {
 		newNode.prev = prevNode;
 
 		size++;
+	}
+
+	private Node getNode(int index) {
+		if (index < 0 || index > size - 1) {
+			System.err.println("Index of bound exception");
+			return null;
+		}
+		int counter = 0;
+		Node currentNode = head;
+		while (counter < index) {
+			currentNode = currentNode.next;
+			counter++;
+		}
+		return currentNode;
+	}
+
+	public T get(int index) {
+		Node node = getNode(index);
+		return node.value;
 	}
 
 	class Node {

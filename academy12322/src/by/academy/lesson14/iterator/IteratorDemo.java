@@ -7,7 +7,7 @@ import java.util.List;
 public class IteratorDemo {
 	public static void main(String[] args) {
 		List<String> arrayList = new ArrayList<>();
-		arrayList.add("C");
+		arrayList.add(null);
 		arrayList.add("A");
 		arrayList.add("E");
 		arrayList.add("B");
@@ -17,8 +17,6 @@ public class IteratorDemo {
 		Iterator<String> iterator = arrayList.iterator();
 
 		while (iterator.hasNext()) {
-			arrayList.add("A");
-
 			String element = iterator.next();
 			System.out.print(element + " ");
 		}

@@ -14,7 +14,9 @@ public class LinkedListCustomDemo {
 		stringList.add("З");
 
 		stringList.add(0, "new");
-
+		stringList.print();
+//
+		System.out.println();
 		System.out.println(stringList.get(1));
 	}
 

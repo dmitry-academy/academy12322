@@ -7,7 +7,7 @@ public class LinkedListDemo {
 		LinkedList<String> list = new LinkedList<>();
 
 		list.add("F");
-		list.add("B");
+		list.add(1, "B");
 		list.add("D");
 		list.add("E");
 		list.add("C");

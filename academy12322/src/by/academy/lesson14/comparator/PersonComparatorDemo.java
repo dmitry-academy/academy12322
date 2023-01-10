@@ -7,6 +7,7 @@ public class PersonComparatorDemo {
 	public static void main(String[] args) {
 		PersonComparator personComparator = new PersonComparator();
 		SortedSet<Person> set = new TreeSet<>(personComparator);
+		
 		set.add(new Person("Саша", "Иванов", 36));
 		set.add(new Person("Маша", "Петрова", 23));
 		set.add(new Person("Даша", "Сидорова", 34));
