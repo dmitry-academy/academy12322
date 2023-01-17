@@ -5,7 +5,7 @@ import java.util.Random;
 public class TwoDArray1 {
 	public static void main(String[] args) {
 		int[][] twoD = new int[4][5];
-		int i, j, k = 0;
+		int i, j = 0;
 
 		Random rand = new Random();
 		for (i = 0; i < 4; i++) {

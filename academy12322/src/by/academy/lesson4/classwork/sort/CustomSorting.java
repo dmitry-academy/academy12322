@@ -7,7 +7,7 @@ public class CustomSorting {
 	public static void main(String[] args) {
 
 		int[] array = { 4, 4, 5, 7, 3, 7, 1, 8, 10 };
-		char[] charArray = { 'c', 'y', 'a', 'c', '5', 'l', 'f', 'q', 'm' };
+//		char[] charArray = { 'c', 'y', 'a', 'c', '5', 'l', 'f', 'q', 'm' };
 
 		// { 4, 2, 5, 7, 3, 7, 1, 8, 10 } // шаг 1
 		// { 10, 2, 5, 7, 3, 7, 1, 8, 10 }; // шаг 2
