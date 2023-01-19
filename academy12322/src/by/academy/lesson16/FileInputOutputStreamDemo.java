@@ -8,7 +8,8 @@ import java.io.OutputStream;
 
 public class FileInputOutputStreamDemo {
 	public static void main(String[] args) {
-		try (OutputStream output = new FileOutputStream("a.txt"); InputStream input = new FileInputStream("a.txt")) {
+		try (OutputStream output = new FileOutputStream("a.txt"); 
+				InputStream input = new FileInputStream("a.txt")) {
 			char[] symbols = { 'a', 'b', 'c', '3', '5' };
 			for (int i = 0; i < symbols.length; i++) {
 				// Запись каждого символа в текстовый файл
