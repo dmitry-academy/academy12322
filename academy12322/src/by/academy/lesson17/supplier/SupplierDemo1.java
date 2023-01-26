@@ -7,7 +7,9 @@ public class SupplierDemo1 {
 
 		String t = "One";
 
-		Supplier<String> supplierStr = () -> t.toUpperCase();
+		Supplier<String> supplierStr = () -> {
+			return t.toUpperCase();
+		};
 
 		System.out.println(supplierStr.get());
 

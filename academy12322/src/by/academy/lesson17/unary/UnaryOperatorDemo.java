@@ -7,11 +7,10 @@ public class UnaryOperatorDemo {
 
 		UnaryOperator<String> uo = s -> {
 			s = s.toUpperCase();
-			s = s.substring(0, 3);
-			return s;
+			return s.substring(0, 3);
 		};
 
-		UnaryOperator<String> uo1 = s -> s.toUpperCase().substring(0, 3);
+//		UnaryOperator<String> uo1 = s -> s.toUpperCase().substring(0, 3);
 		System.out.print(uo.apply("Java 8"));
 
 	}

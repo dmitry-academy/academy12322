@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.Random;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -19,6 +22,11 @@ public class TerminalOperationDemo {
 		// Возвращает первый элемент из стрима (возвращает Optional)
 		// collection.stream().findFirst().orElse(«1»)
 		System.out.println("Find first: ");
+//		[]
+		int test = intList.stream().findFirst().orElse(Integer.MIN_VALUE);
+		Optional<Integer> test1 = intList.stream().findFirst();
+		Integer test2 = intList.stream().findFirst().get();
+
 		System.out.println(intList.stream().findFirst().orElse(Integer.MIN_VALUE));
 		System.out.println(Collections.emptyList().stream().findFirst().orElse(true));
 		System.out.println();
@@ -70,7 +78,7 @@ public class TerminalOperationDemo {
 		// Возвращает минимальный элемент, в качестве условия использует компаратор
 		// collection.stream().min(String::compareTo).get()
 		System.out.println("min: ");
-		System.out.println(intList.stream().min(Comparator.comparing(Integer::valueOf)));
+		System.out.println(intList.stream().min((o1, o2) -> o1.compareTo(o2)));
 		System.out.println();
 
 		// max
@@ -85,6 +93,7 @@ public class TerminalOperationDemo {
 		// выполнении не гарантируется
 		// set.stream().forEach((p) -> p.append("_1"));
 		System.out.println("forEach: ");
+
 		intList.parallelStream().forEach(p -> {
 			System.out.println("forEach:" + p);
 		});
@@ -114,12 +123,17 @@ public class TerminalOperationDemo {
 		// collection.stream().reduce((s1, s2) -> s1 + s2).orElse(0)
 		System.out.println(intList);
 		System.out.println("reduce: ");
+
 		System.out.println(intList.stream().reduce((s1, s2) -> s1 + s2).orElse(0));
 		System.out.println();
 
 		System.out.println(
 				Collections.emptyList().stream().reduce((s1, s2) -> (int) s1 + (int) s2).orElse(Integer.MAX_VALUE));
 
+		Map<Integer, String> map = Stream.of(1, 2, 3, 1, 2, 3)
+				.collect(Collectors.toMap(Function.identity(), i -> " ----" + i + "-----", (o1, o2) -> o1));
+
+		System.out.println(map);
 	}
 
 	private static List<Integer> generateIntegerList(Integer seed, Integer size) {

@@ -4,6 +4,10 @@ public class Cat extends Animal {
 
 	String color = "red";
 
+	public Cat() {
+		super();
+	}
+
 	public void mew() {
 		System.out.println("Mew!!");
 	}

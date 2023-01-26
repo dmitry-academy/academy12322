@@ -9,10 +9,10 @@ public class StreamDemo {
 		long count = Stream
 							.generate(() -> new Random().nextInt(255))
 							.limit(100)
+							.filter(intValue -> intValue < 50)
 							.peek(s -> System.out.print(s + " "))
-							.map(intValue -> (char) intValue.intValue())
-							.peek(s -> System.out.print(s + " "))
-							.filter(intValue -> intValue > 50)
+							.map(intValue -> intValue.intValue())
+							.peek(s -> System.out.print(s*1000 + " "))
 							.count();
 
 		System.out.println();

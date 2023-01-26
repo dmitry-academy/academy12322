@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class IntermediateOperationDemo {
+
 	public static void main(String... args) {
 
 		List<Integer> intList = generateIntegerList(255, 100);
@@ -18,12 +19,12 @@ public class IntermediateOperationDemo {
 		System.out.println("Filtred list: ");
 		System.out.println(intList.stream().filter(i -> i < 100).collect(Collectors.toList()));
 
-		System.out.println(
-				intList.stream().filter(i -> i < 100).map(i -> i.toString()).collect(Collectors.joining(", ")));
+		System.out.println(intList.stream().filter(i -> i < 100).map(String::valueOf).filter(s -> !s.isBlank())
+				.collect(Collectors.joining(", ")));
 		// ---------------------
 
 		System.out.println(Stream.of("test1", "test2", "test3", "test4").collect(Collectors.joining(", ")));
-		System.out.println(Stream.of(1, 2, 3).map(i -> i.toString()).collect(Collectors.joining(", ")));
+		System.out.println(Stream.of(1, 2, 3).map(String::valueOf).collect(Collectors.joining(", ")));
 		System.out.println();
 
 		// skip Позволяет пропустить N первых элементов
@@ -67,7 +68,7 @@ public class IntermediateOperationDemo {
 		System.out.println(mapList.stream().limit(2).collect(Collectors.toList()));
 
 		System.out.println("Sorted: ");
-		System.out.println(mapList.stream().sorted().collect(Collectors.toList()));
+		System.out.println(mapList.stream().sorted((o1, o2) -> o2 - o1).collect(Collectors.toList()));
 
 		List<Integer> mapList1 = generateIntegerList(10, 30);
 		System.out.println(mapList1);
@@ -78,6 +79,6 @@ public class IntermediateOperationDemo {
 
 	private static List<Integer> generateIntegerList(Integer seed, Integer size) {
 		Supplier<Integer> s = () -> new Random().nextInt(seed);
-		return Stream.generate(s).limit(size).collect(Collectors.toList());
+		return Stream.generate(s).limit(size).toList();
 	}
 }

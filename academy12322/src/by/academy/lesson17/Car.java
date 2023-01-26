@@ -7,6 +7,9 @@ public class Car implements Cloneable {
 	private double cost;
 	private Engine e;
 
+	public Car() {
+	}
+
 	public Car(String model) {
 		this.model = model;
 		this.type = CarTypes.COMPACT;

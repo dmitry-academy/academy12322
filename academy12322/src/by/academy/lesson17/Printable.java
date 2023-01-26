@@ -10,4 +10,5 @@ public interface Printable {
 	int hashCode();
 
 	String toString();
+
 }
