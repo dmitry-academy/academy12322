@@ -5,8 +5,8 @@ import jdk.jfr.Description;
 public class Car extends Vehicle {
 
 	@Description("the power of an engine")
-	public int horsepower;
-	private String serialNumber;
+	private int horsepower = 1;
+	private final String serialNumber;
 
 	public Car() {
 		serialNumber = "123";

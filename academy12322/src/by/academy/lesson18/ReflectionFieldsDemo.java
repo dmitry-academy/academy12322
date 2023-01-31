@@ -33,14 +33,17 @@ public class ReflectionFieldsDemo {
 //			System.out.println(field);
 //		}
 
-////		example 4
+//		example 4
 		System.out.println("example 4");
 		try {
-			Field horsepowerField = carClass.getField("horsepower");
-			System.out.println(horsepowerField);
-			
-			Field serialNumberField = carClass.getField("serialNumber");
-			System.out.println(serialNumberField);
+//			Field horsepowerField = carClass.getField("horsepower");
+//			System.out.println(horsepowerField);
+
+//			Field serialNumberField = carClass.getField("serialNumber");
+//			System.out.println(serialNumberField);
+			Field academyField = carClass.getField("academy");
+			System.out.println(academyField);
+
 		} catch (NoSuchFieldException e) {
 			e.printStackTrace();
 		}

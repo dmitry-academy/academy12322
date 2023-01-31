@@ -1,6 +1,7 @@
 package by.academy.lesson18.methods;
 
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 
 import by.academy.lesson18.Car;
 
@@ -12,7 +13,10 @@ public class ReflectionMethodsDemo {
 		Class<Car> carClass = Car.class;
 		Method[] declaredMethods = carClass.getDeclaredMethods();
 		for (Method method : declaredMethods) {
-			System.out.println(method);
+			System.out.println(method + " params count: " + method.getParameterCount());
+			for (Parameter param : method.getParameters()) {
+				System.out.println(param);
+			}
 		}
 
 // 		example 2

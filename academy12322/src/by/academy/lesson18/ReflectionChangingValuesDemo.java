@@ -10,18 +10,30 @@ public class ReflectionChangingValuesDemo {
 		Class<Car> carClass = Car.class;
 
 		try {
-			Field serialNumberField = carClass.getDeclaredField("serialNumber");
-			serialNumberField.setAccessible(true);
+			Field horsepower = carClass.getDeclaredField("horsepower");
+			horsepower.setAccessible(true);
 
-			System.out.println("Before change:" + serialNumberField.get(car));
-			serialNumberField.set(car, "7777");
+//			int modifiers1 = horsepower.getModifiers();
+//			System.out.println(Modifier.isFinal(modifiers1));
+//
+////			
+//			Field modifiersField = horsepower.getClass().getDeclaredField("modifiers");
+//			modifiersField.setAccessible(true);
+//			modifiersField.setInt(horsepower, horsepower.getModifiers() & ~Modifier.FINAL);
+//			
+//			int modifiers2 = horsepower.getModifiers();
+//			System.out.println(Modifier.isFinal(modifiers2));
+			
+			System.out.println("Before change:" + horsepower.get(car));
+			horsepower.set(car, 2);
 
-			System.out.println("After change:" + serialNumberField.get(car));
+			System.out.println("After change:" + horsepower.get(car));
 
-			System.out.println(Modifier.isPrivate(serialNumberField.getModifiers()));
+			System.out.println(Modifier.isPrivate(horsepower.getModifiers()));
+
 		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 }
