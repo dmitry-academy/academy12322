@@ -2,6 +2,7 @@ package by.academy.lesson18;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.Arrays;
 import java.util.GregorianCalendar;
 
 public class ReflectionFieldDemo {
@@ -16,6 +17,7 @@ public class ReflectionFieldDemo {
 			Field bcField = calendarClass.getDeclaredField("BC");
 			bcField.setAccessible(true);
 			
+			System.out.println(Arrays.toString(bcField.getClass().getDeclaredFields()));
 			Field modifiersField = bcField.getClass().getDeclaredField("modifiers");
 			modifiersField.setAccessible(true);
 			modifiersField.setInt(bcField, bcField.getModifiers() & ~Modifier.FINAL);

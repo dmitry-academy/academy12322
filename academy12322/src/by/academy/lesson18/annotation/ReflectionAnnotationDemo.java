@@ -15,18 +15,20 @@ public class ReflectionAnnotationDemo {
 			Field horsepowerField = carClass.getDeclaredField("horsepower");
 
 			Annotation[] annotations = horsepowerField.getAnnotations();
-			System.out.println(Arrays.toString(annotations));
+//			System.out.println(Arrays.toString(annotations));
 
 			Description descriptionAnnotation = horsepowerField.getAnnotation(Description.class);
 
-			System.out.println(descriptionAnnotation.value());
-
-			System.out.println(descriptionAnnotation);
+//			System.out.println(descriptionAnnotation.value());
+//
+//			System.out.println(descriptionAnnotation);
 
 //			Annotation[] annotationsByType = horsepowerField.getAnnotationsByType(Description.class);
 //			System.out.println(Arrays.toString(annotationsByType));
 //			System.out.println(descriptionAnnotation.value());
 
+			Annotation[] test = carClass.getDeclaredAnnotations();
+			System.out.println(Arrays.toString(test));
 		} catch (NoSuchFieldException e) {
 			e.printStackTrace();
 		} catch (SecurityException e) {

@@ -2,6 +2,7 @@ package by.academy.lesson18;
 
 import jdk.jfr.Description;
 
+@Description("the power of an engine")
 public class Car extends Vehicle {
 
 	@Description("the power of an engine")

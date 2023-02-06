@@ -12,8 +12,7 @@ public class ReflectionInvokeExample {
 		Car car = new Car(100, "AA180A1");
 		Class<? extends Car> carClass = car.getClass();
 
-//		Constructor<Car> c = carClass.getConstructor();
-//		Car car1 = c.newInstance(args);
+
 		Method getHorsepowerMethod;
 		try {
 			getHorsepowerMethod = carClass.getMethod("getHorsepower");
