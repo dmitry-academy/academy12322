@@ -7,6 +7,7 @@ public class SleepRunnableDemo {
 		Thread two = new Thread(sleepRunnable);
 		Thread three = new Thread(sleepRunnable);
 
+		one.setDaemon(true);
 		one.setName("Fred");
 		two.setName("Lucy");
 		three.setName("Rick");

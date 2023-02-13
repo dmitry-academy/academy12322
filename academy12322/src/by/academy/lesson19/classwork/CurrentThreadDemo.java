@@ -14,6 +14,8 @@ public class CurrentThreadDemo {
 //		System.out.println(t.isDaemon());
 
 		MyRunnable mr = new MyRunnable();
+//		Runnable mr = () -> System.out.println("Test");
+
 		List<Thread> threads = new ArrayList<>();
 		for (int j = 0; j < 100; j++) {
 			for (int i = 1; i <= 10; i++) {

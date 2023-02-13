@@ -15,12 +15,14 @@ public class DaemonThread extends Thread {
 //		} catch (InterruptedException e) {
 //			e.printStackTrace();
 //		}
-		System.out.println("Daemon started: " + getName());
-		if (Thread.currentThread().isDaemon()) {
-			System.out.println(getName() + " is Daemon thread");
-		} else {
-			System.out.println(getName() + " is User thread");
+//		System.out.println("Daemon started: " + getName());
+//		if (Thread.currentThread().isDaemon()) {
+//			System.out.println(getName() + " is Daemon thread");
+//		} else {
+//			System.out.println(getName() + " is User thread");
+//		}
+		for (;;) {
+			System.out.println("все еще работаю");
 		}
-
 	}
 }

@@ -5,7 +5,9 @@ public class SleepRunnable implements Runnable {
 		for (int x = 1; x < 4; x++) {
 			System.out.println("Run by " + Thread.currentThread().getName() + ", x is " + x);
 			try {
-				Thread.sleep(1000, 100);
+				if (Thread.currentThread().isDaemon()) {
+					Thread.sleep(10000, 100);
+				}
 			} catch (InterruptedException ex) {
 				ex.printStackTrace();
 			}

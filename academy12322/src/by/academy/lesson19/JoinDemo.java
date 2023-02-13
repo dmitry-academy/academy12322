@@ -9,7 +9,7 @@ public class JoinDemo {
 
 		a.start();
 //		try {
-		a.join();
+//		a.join();
 //		} catch (InterruptedException e) {
 //			System.out.println(e.getMessage());
 //		}
@@ -18,12 +18,12 @@ public class JoinDemo {
 
 		b.start();
 //		try {
-//		b.join();
+		a.join();
 //		} catch (InterruptedException e) {
 //			System.out.println(e.getMessage());
 //		}
 		c.start();
-		c.join();
+//		c.join();
 		System.out.println("test");
 		System.out.println(Thread.currentThread().getState());
 	}
